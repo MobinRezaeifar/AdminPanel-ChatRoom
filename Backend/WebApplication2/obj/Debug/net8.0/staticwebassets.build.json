@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "psrg59uqSCgaIgXXFVXI8s0QR3NsSHjep/thvYdekwA=",
+  "Source": "WebApplication2",
+  "BasePath": "_content/WebApplication2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication2\\wwwroot",
+      "Source": "WebApplication2",
+      "ContentRoot": "E:\\Programming\\React\\Admin Panel + Chat\\Backend\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

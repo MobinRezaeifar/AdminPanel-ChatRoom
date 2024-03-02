@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color:#393939;
+}
+
+.Btnn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 65, 65);
+}
+
+/* plus sign */
+.signn {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signn svg {
+  width: 17px;
+}
+
+.signn svg path {
+  fill: white;
+}
+/* text */
+.textt {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btnn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btnn:hover .signn {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btnn:hover .textt {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btnn:active {
+  transform: translate(2px ,2px);
+}
+
+.container {
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  scroll-padding: 10px;
+  background-color: white;
+  border-radius: .6rem;
+  background-color: #393939;
+}
+
+.container .item {
+  scroll-snap-align: start;
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: bisque;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.3em;
+  font-weight: 400;
+  font-family: sans-serif;
+  border-radius: .2rem;
+}
+@media (min-width:590px) {
+  .container .item{
+    flex: 0 0 20%;
+  }
+}
